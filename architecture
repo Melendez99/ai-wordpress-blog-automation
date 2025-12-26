@@ -1,1 +1,36 @@
+# System Architecture Overview
+
+This system is an end-to-end AI-powered content pipeline built in n8n that automatically researches, writes, optimizes, and publishes SEO-ready blog articles to WordPress.
+
+## Step 1: Article Discovery & Vector Storage
+- Fetches fresh news or topic sources daily
+- Saves articles into a vector store for semantic relevance matching
+- Enables long-term memory and topic reuse
+
+## Step 2: Relevance Scoring
+- AI evaluates articles based on relevance and intent
+- Filters low-quality or off-topic content
+- Ensures only high-value topics proceed
+
+## Step 3: Research & Enrichment
+- Performs deep research using external sources
+- Aggregates supporting data
+- Prepares structured research summaries for writing
+
+## Step 4: Article Writing & SEO Optimization
+- Generates long-form blog content using AI
+- Applies SEO structure (headings, keywords, internal logic)
+- Prepares metadata for search engines
+
+## Step 5: Media Generation & Publishing
+- Generates or fetches images
+- Uploads images to WordPress
+- Creates and publishes the final blog post
+- Sets metadata and publication status
+
+## Key Design Decisions
+- Modular step separation for maintainability
+- AI quality gates before publishing
+- Fully automated daily execution
+- Human-readable outputs for easy review if needed
 
